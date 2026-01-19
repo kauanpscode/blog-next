@@ -1,0 +1,14 @@
+{
+  "name": "Next.js 9 Legacy",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:12",
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install -g npm@6 && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
