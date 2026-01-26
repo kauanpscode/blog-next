@@ -2,13 +2,6 @@ import { useEffect, useState } from 'react';
 import { PostData } from '../domain/posts/post';
 import { GetStaticProps } from 'next';
 
-const getPosts = async (): Promise<PostData[]> => {
-  const response = await fetch('http://localhost:1337/api/posts');
-  const jsonPosts = await response.json();
-
-  return jsonPosts.data;
-};
-
 export type HomeProps = {
   posts: PostData[];
 };
